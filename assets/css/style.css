@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{    
+    height: 100%;
+    margin: 0 auto;
+    display: grid;    
+    grid-template-columns: auto;
+    grid-template-rows: 80px 1fr 1fr 30px;
+    grid-template-areas: "header"
+                         "main"
+                         "main"
+                         "footer";
+}
+
+.header{
+    grid-area: header;    
+    display: flex;    
+    justify-content: center;
+}
+
+.header img{
+    margin: 10px;    
+}
+
+.navbar{        
+    flex-grow: 1;
+    /* background-color: rgb(49, 7, 77);    rgb(233, 211, 219)     */
+    /* uso gradiente */
+    background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;        
+}
+
+.navbar ul{    
+    list-style: none;   /*saca las viñetas*/
+    font-size: 12px;     /*tenía 18*/
+}
+
+.navbar ul li{
+    display: inline-block;   /*la coloca en forma horizontal*/
+    margin-left: 10px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;  /*saca el subrayado*/    
+    color: white;
+}
+
+.main{
+    /* background-image: url("../img/fiesta0.jpg"); */
+    background-color: rgb(233, 211, 219);
+    grid-area: main;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContenido{   
+    padding: 10px;
+    margin: 10px;    
+    width: 100%;
+    color: rgb(3, 3, 78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Titulo y subtítulo*/
+h1{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+h2{
+    padding: 10px;
+    font-size: 20px;
+}
+/**/
+
+.btn{
+    width: 100px;        
+    border-radius: 5px;    
+    padding: 5px 10px;    
+    margin: 10px;
+}
+
+/*Galeria*/
+.contenedorTarjetas{    
+    display: flex;   
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: stretch;
+    color: rebeccapurple;
+    margin: 10px;
+}
+
+.tarjeta{
+    border: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.tarjeta img{
+    width: 200px;
+}
+
+.tarjeta h4{
+    font-size: 15px;
+}
+
+/*fin Galeria*/
+
+/*Productos*/
+.tarjetaProducto{    
+    /* background-color: rgb(233, 211, 219); */
+    background: linear-gradient(to right, #dae2f8, #d6a4a4);
+    border: 0px;
+    border-radius: 5px;    
+    width: 300px;
+    display: flex;        
+    padding: 10px;
+    margin: 10px;    
+}
+
+.tarjetaProducto img{
+    width: 80px;
+}
+
+.tarjetaProducto h4{
+    width: 200px;
+    padding: 10px;
+}
+
+.tarjetaContenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen{
+    padding: 5px;
+}
+
+/*fin Productos*/
+
+/*Contacto*/
+.contedorContacto{    
+    width: 100%;
+}
+
+.formulario{
+    padding: 10px;      
+}
+
+.formulario div{
+    margin: 10px;
+}
+
+.formulario input{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.formulario textarea{
+    border-radius: 5px;
+    padding: 5px;
+    width:350px;
+    height:100px;
+}
+
+/* fin Contacto*/
+
+/*Quienes Somos*/
+.fondoContenedor{
+    background-image: url("../img/staff.jpg");
+    background-size: cover;   
+    color: rgb(233, 211, 219);
+}
+
+.transparente{
+    background-color: rgba(49, 7, 77, 0.4);
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.lista{  
+    width: 90%;
+    padding: 20px;    
+    font-size: 15px;    
+    font-weight: bold; 
+}
+
+.lista li{
+    line-height: 2;    
+}
+
+/*fin Quienes Somos*/
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(233, 211, 219);
+    color: rgb(57, 8, 104);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redes{
+    padding: 10px;    
+}
+
+.footer img{
+    width: 20px;
+}
+
+@media(min-width: 768px){
+    .main{
+        background-image: url("../img/fiesta0.jpg");
+        background-size: cover;   
+    }    
+
+    .navbar ul{    
+        font-size: 18px;     
+    }
+
+    .btn{
+        color: black;
+        background-color: white;
+    }
+
+    .tarjetaProducto{            
+        width: 400px;
+    }
+    
+    .fondoContenedor{
+        width: 600px; 
+        height: 450px;       
+    }
+
+    .lista{  
+        font-size: 20px;        
+    }
+
+    .tarjeta{
+        width: 400px;        
+    }
+    
+    .tarjeta img{
+        width: 300px;
+    }
+     
+    .contedorContacto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario textarea{
+        width:500px;
+        height:150px;        
+    }
+    
+    .footer{
+        font-size: 15px;
+    }
+
+}
+

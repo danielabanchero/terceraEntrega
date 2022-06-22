@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stilo Eventos</title>
+    <link rel="shortcut icon" href="../assets/img/icono.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">        
+            <nav class="navbar">        
+                <img src="../assets/img/logotipo32.png" alt="Stilo Eventos" >
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Nuestros eventos</a></li>
+                    <li><a href="./quienesSomos.html">Quienes somos</a></li>
+                    <li><a href="./galeria.html">Galería</a></li> 
+                    <li><a href="./contacto.html">Contacto</a></li>            
+                </ul>            
+            </nav>                             
+        </header>               
+    
+        <main class="main">
+            <div class="mainContenido">
+                <h1>Contactate con nosotros</h1>     
+                <h2>Tu consulta no molesta ...</h2>      
+            
+                <div class="contedorContacto">
+                <div class="formulario">
+                    <form action="prueba.php">
+                        <div><label for="Nombre">Nombre:</label>
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre" size="40" required>
+                        </div>
+                        <div>
+                            <label for="Apellido">Apellido:</label>
+                            <input type="text" name="apellido" placeholder="Ingrese su apellido" size="40" required>
+                        </div>
+                        <div><label for="Sexo">Sexo:</label>    
+                            <label for="sexo">Masculino</label>
+                            <input type="radio" name="sexo" value="m">
+                            <label for="sexo">Femenino</label>
+                            <input type="radio" name="sexo" value="f">
+                        </div>
+                        <div><label for="Teléfono">Teléfono:</label>
+                            <input type="telefono" name="telefono" placeholder="Ingrese su teléfono" size="40" required>                    
+                        </div>
+                        <div><label for="Email">Email:</label>
+                            <input type="email" name="email" placeholder="Ingrese su email" size="40" required>                    
+                        </div>                        
+                        <div>
+                            <textarea name="consulta" cols="40" rows="10" placeholder="Ingrese su consulta"></textarea>
+                        </div>
+                        
+                        <button class="btn" type="submit">Enviar</button>
+                        <button class="btn" type="reset">Borrar</button>
+                    </form>
+                
+                </div>
+                
+                <iframe height="450px" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.3808042207565!2d-60.53256038476509!3d-31.73280521880353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b4527936b7b909%3A0x6f9ce79ac6cf86a8!2sSidecreer!5e0!3m2!1ses!2sar!4v1653911013397!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <h5 class="pie">©2022 Daniela Banchero - Todos los derechos reservados</h5>
+            <div class="redes">
+                <img src="../assets/img/facebook.png" alt="">
+                <img src="../assets/img/instagram.jpg" alt="">
+                <img src="../assets/img/whatsapp.png" alt="">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
