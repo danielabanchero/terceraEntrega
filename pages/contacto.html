@@ -6,73 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stilo Eventos</title>
     <link rel="shortcut icon" href="../assets/img/icono.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <header class="header">        
-            <nav class="navbar">        
-                <img src="../assets/img/logotipo32.png" alt="Stilo Eventos" >
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Nuestros eventos</a></li>
-                    <li><a href="./quienesSomos.html">Quienes somos</a></li>
-                    <li><a href="./galeria.html">Galería</a></li> 
-                    <li><a href="./contacto.html">Contacto</a></li>            
-                </ul>            
-            </nav>                             
-        </header>               
+<body class="container-fluid m-0 p-0">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div data-aos="flip-down" data-aos-duration="1500">   
+                    <img src="../assets/img/logotipo32.png" alt="Stilo Eventos" >                 
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Nuestros Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienesSomos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+        </nav>                      
+    </header>        
     
-        <main class="main">
-            <div class="mainContenido">
-                <h1>Contactate con nosotros</h1>     
-                <h2>Tu consulta no molesta ...</h2>      
-            
-                <div class="contedorContacto">
-                <div class="formulario">
-                    <form action="prueba.php">
-                        <div><label for="Nombre">Nombre:</label>
-                            <input type="text" name="nombre" placeholder="Ingrese su nombre" size="40" required>
+    <main class="main">
+        <div>
+            <p class="fs-5 p-1">Contactate con nosotros ahora!</p>                              
+            <p class="fs-5 mx-3">Tu consulta no molesta ...</p>      
+                        
+            <div class="container-fluid d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-5 col-xl-6">
+                    <form class="m-1">
+                        <div class="m-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="nombre" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Ingrese su nombre" required>      
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="apellido" class="form-control" id="apellido" aria-describedby="apellido" placeholder="Ingrese su apellido" required>       
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">                  
                         </div>
-                        <div>
-                            <label for="Apellido">Apellido:</label>
-                            <input type="text" name="apellido" placeholder="Ingrese su apellido" size="40" required>
-                        </div>
-                        <div><label for="Sexo">Sexo:</label>    
-                            <label for="sexo">Masculino</label>
-                            <input type="radio" name="sexo" value="m">
-                            <label for="sexo">Femenino</label>
-                            <input type="radio" name="sexo" value="f">
-                        </div>
-                        <div><label for="Teléfono">Teléfono:</label>
-                            <input type="telefono" name="telefono" placeholder="Ingrese su teléfono" size="40" required>                    
-                        </div>
-                        <div><label for="Email">Email:</label>
-                            <input type="email" name="email" placeholder="Ingrese su email" size="40" required>                    
-                        </div>                        
-                        <div>
-                            <textarea name="consulta" cols="40" rows="10" placeholder="Ingrese su consulta"></textarea>
+                        <div class="form-floating m-3">
+                            <textarea class="form-control" placeholder="Ingrese su consulta" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Consulta</label>
                         </div>
                         
-                        <button class="btn" type="submit">Enviar</button>
-                        <button class="btn" type="reset">Borrar</button>
+                        <button class="btn btnBlanco m-1" type="submit">Enviar</button>
                     </form>
-                
                 </div>
-                
-                <iframe height="450px" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.3808042207565!2d-60.53256038476509!3d-31.73280521880353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b4527936b7b909%3A0x6f9ce79ac6cf86a8!2sSidecreer!5e0!3m2!1ses!2sar!4v1653911013397!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-12 col-md-5 col-xl-6">
+                    <iframe height="450px" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.3808042207565!2d-60.53256038476509!3d-31.73280521880353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b4527936b7b909%3A0x6f9ce79ac6cf86a8!2sSidecreer!5e0!3m2!1ses!2sar!4v1653911013397!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="footer">
-            <h5 class="pie">©2022 Daniela Banchero - Todos los derechos reservados</h5>
-            <div class="redes">
-                <img src="../assets/img/facebook.png" alt="">
-                <img src="../assets/img/instagram.jpg" alt="">
-                <img src="../assets/img/whatsapp.png" alt="">
-            </div>
-        </footer>
-    </div>
+    <footer>          
+        <div class="footer">
+            <p>©2022 Daniela Banchero - Todos los derechos reservados</p>    
+            <img src="../assets/img/facebook.png" alt="">
+            <img src="../assets/img/instagram.jpg" alt="">
+            <img src="../assets/img/whatsapp.png" alt="">
+        </div>       
+                    
+    </footer>  
+        
+    <!-- para que funcionen las animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper para Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

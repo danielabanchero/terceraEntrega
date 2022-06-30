@@ -6,52 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stilo Eventos</title>
     <link rel="shortcut icon" href="../assets/img/icono.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <header class="header">        
-            <nav class="navbar">        
-                <img src="../assets/img/logotipo32.png" alt="Stilo Eventos" >
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Nuestros eventos</a></li>
-                    <li><a href="./quienesSomos.html">Quienes somos</a></li>
-                    <li><a href="./galeria.html">Galería</a></li> 
-                    <li><a href="./contacto.html">Contacto</a></li>            
-                </ul>            
-            </nav>                             
-        </header>        
-        
-        <main class="main">
-            <div class="mainContenido">
-                <h1>Conocenos</h1>        
-                <h2>Somos una empresa dedicada a la organización integral de eventos con soluciones creativas para todos aquellos que quieran vivir una experiencia única e inolvidable para sus celebraciones y por otro lado desarrollamos grandes eventos comerciales dirigidos a un cliente final de una manera experiencial y sostenible.</h2>
-                
-                <div class="contenedorTarjetas fondoContenedor">    
-                    <div class="transparente">                          
-                        <h3>Nuestro equipo</h3>
-                        <ul class="lista">
-                            <li>Juliana Alvarez - Téc. en Dirección de Protocolo, Organización de Eventos y Relaciones Públicas </li>
-                            <li>Rosario Gonzalez - Lic. en Nutrición</li>
-                            <li>Jorge Ruiz - DJ y músico</li>            
-                        </ul>
-                    </div>      
+<body class="container-fluid m-0 p-0">    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div data-aos="flip-down" data-aos-duration="1500">   
+                    <img src="../assets/img/logotipo32.png" alt="Stilo Eventos" >                 
                 </div>
-
-                <!-- <img src="../assets/img/fiesta.png" alt=""> -->
-                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Nuestros Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./quienesSomos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>  
+                    </ul>
+                </div>
             </div>
-        </main>
+        </nav>                      
+    </header>
         
-        <footer class="footer">
-            <h5 class="pie">©2022 Daniela Banchero - Todos los derechos reservados</h5>
-            <div class="redes">
-                <img src="../assets/img/facebook.png" alt="">
-                <img src="../assets/img/instagram.jpg" alt="">
-                <img src="../assets/img/whatsapp.png" alt="">
-            </div>
-        </footer>
-    </div>
+    <main class="main">
+        <div>
+            <p class="fs-2 p-1">Conocenos</p>        
+            <p class="fs-5 p-1">Somos una empresa dedicada a la organización integral de eventos con soluciones creativas para todos aquellos que quieran vivir una experiencia única e inolvidable para sus celebraciones y por otro lado desarrollamos grandes eventos comerciales dirigidos a un cliente final de una manera experiencial y sostenible.</p>
+                
+            <div class="container fondoContenedor d-flex justify-content-around flex-wrap m-2 p-1">
+                <div class="transparente" >                          
+                    <h3>Nuestro equipo</h3>
+                    <ul class="lista">
+                        <li>Juliana Alvarez - Téc. en Dirección de Protocolo, Organización de Eventos y Relaciones Públicas </li>
+                        <li>Rosario Gonzalez - Lic. en Nutrición</li>
+                        <li>Jorge Ruiz - DJ y músico</li>            
+                    </ul>
+                </div>      
+            </div>                
+        </div>
+    </main>
+        
+    <footer>          
+        <div class="footer">
+            <p>©2022 Daniela Banchero - Todos los derechos reservados</p>    
+            <img src="../assets/img/facebook.png" alt="">
+            <img src="../assets/img/instagram.jpg" alt="">
+            <img src="../assets/img/whatsapp.png" alt="">
+        </div>       
+            
+    </footer>  
+
+    <!-- para que funcionen las animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper para Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

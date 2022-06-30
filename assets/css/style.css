@@ -5,179 +5,42 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.container{    
-    height: 100%;
-    margin: 0 auto;
-    display: grid;    
-    grid-template-columns: auto;
-    grid-template-rows: 80px 1fr 1fr 30px;
-    grid-template-areas: "header"
-                         "main"
-                         "main"
-                         "footer";
-}
-
-.header{
-    grid-area: header;    
-    display: flex;    
-    justify-content: center;
-}
-
-.header img{
-    margin: 10px;    
-}
-
 .navbar{        
     flex-grow: 1;
     /* background-color: rgb(49, 7, 77);    rgb(233, 211, 219)     */
     /* uso gradiente */
-    background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;        
+    background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
 }
 
-.navbar ul{    
-    list-style: none;   /*saca las viñetas*/
-    font-size: 12px;     /*tenía 18*/
-}
-
-.navbar ul li{
-    display: inline-block;   /*la coloca en forma horizontal*/
-    margin-left: 10px;
-    padding: 10px;
-}
-
-a{
-    text-decoration: none;  /*saca el subrayado*/    
+.nav-link{
     color: white;
 }
 
-.main{
-    /* background-image: url("../img/fiesta0.jpg"); */
+/*  Este es para el elemento activo lo puedes omitir si asi deseas */
+.navbar-light .navbar-nav .active>.nav-link  {
+    color: red;
+}
+
+.navbar ul li{
+    padding: 10px;
+}
+
+main{    
     background-color: rgb(233, 211, 219);
-    grid-area: main;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: rgb(57, 8, 104);
 }
 
-.mainContenido{   
-    padding: 10px;
-    margin: 10px;    
-    width: 100%;
-    color: rgb(3, 3, 78);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*Titulo y subtítulo*/
-h1{
-    padding-bottom: 10px;
-    font-size: 25px;
-}
-
-h2{
-    padding: 10px;
-    font-size: 20px;
-}
-/**/
-
-.btn{
-    width: 100px;        
-    border-radius: 5px;    
-    padding: 5px 10px;    
-    margin: 10px;
-}
-
-/*Galeria*/
-.contenedorTarjetas{    
-    display: flex;   
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    align-items: stretch;
-    color: rebeccapurple;
-    margin: 10px;
-}
-
-.tarjeta{
-    border: none;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.tarjeta img{
-    width: 200px;
-}
-
-.tarjeta h4{
-    font-size: 15px;
-}
-
-/*fin Galeria*/
 
 /*Productos*/
-.tarjetaProducto{    
-    /* background-color: rgb(233, 211, 219); */
-    background: linear-gradient(to right, #dae2f8, #d6a4a4);
-    border: 0px;
-    border-radius: 5px;    
-    width: 300px;
-    display: flex;        
-    padding: 10px;
-    margin: 10px;    
+
+.card img{
+    width: 18rem;
+    transition: all 1s;
 }
 
-.tarjetaProducto img{
-    width: 80px;
+.cardAnimada:hover{
+  transform: translate(10px, 20px);   
 }
-
-.tarjetaProducto h4{
-    width: 200px;
-    padding: 10px;
-}
-
-.tarjetaContenido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.imagen{
-    padding: 5px;
-}
-
-/*fin Productos*/
-
-/*Contacto*/
-.contedorContacto{    
-    width: 100%;
-}
-
-.formulario{
-    padding: 10px;      
-}
-
-.formulario div{
-    margin: 10px;
-}
-
-.formulario input{
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.formulario textarea{
-    border-radius: 5px;
-    padding: 5px;
-    width:350px;
-    height:100px;
-}
-
-/* fin Contacto*/
 
 /*Quienes Somos*/
 .fondoContenedor{
@@ -188,8 +51,7 @@ h2{
 
 .transparente{
     background-color: rgba(49, 7, 77, 0.4);
-    width: 80%;
-    height: 70%;
+    width: 80%;    
     display: flex;
     flex-direction: column;
     margin: 10px 0;
@@ -209,8 +71,31 @@ h2{
 
 /*fin Quienes Somos*/
 
+/*Contacto*/
+.formulario{
+    width: 100%;
+}
+
+.formulario input{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.formulario textarea{
+    border-radius: 5px;
+    padding: 5px;
+    width:350px;
+    height:100px;
+}
+
+.btnBlanco{
+    color: black;
+    background-color: white;
+}
+
+/* fin Contacto*/
+
 .footer{
-    grid-area: footer;
     background-color: rgb(233, 211, 219);
     color: rgb(57, 8, 104);
     font-size: 10px;
@@ -220,63 +105,30 @@ h2{
 
 }
 
-.redes{
-    padding: 10px;    
-}
-
 .footer img{
-    width: 20px;
+    width: 30px;
+    padding: 5px;
 }
 
 @media(min-width: 768px){
     .main{
         background-image: url("../img/fiesta0.jpg");
         background-size: cover;   
-    }    
-
-    .navbar ul{    
-        font-size: 18px;     
-    }
-
-    .btn{
-        color: black;
-        background-color: white;
-    }
-
-    .tarjetaProducto{            
-        width: 400px;
-    }
+    }      
     
     .fondoContenedor{
-        width: 600px; 
-        height: 450px;       
-    }
-
-    .lista{  
-        font-size: 20px;        
-    }
-
-    .tarjeta{
-        width: 400px;        
-    }
-    
-    .tarjeta img{
-        width: 300px;
-    }
-     
-    .contedorContacto{
-        display: flex;
-        justify-content: center;
-    }
-
-    .formulario textarea{
-        width:500px;
-        height:150px;        
+        width: 80%; 
+        height: 400px;       
     }
     
     .footer{
-        font-size: 15px;
+        font-size: 12px;
     }
 
+    .footer img{
+        width: 40px;        
+    }
 }
+
+/**/
 
