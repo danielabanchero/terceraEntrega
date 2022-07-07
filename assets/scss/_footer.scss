@@ -1,0 +1,13 @@
+.footer{
+    background-color: $colorPrimario;
+    color: $colorSecundario;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 30px;
+        padding: 5px;
+    }
+}

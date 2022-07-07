@@ -1,0 +1,39 @@
+@media(min-width: 768px){
+    .main{
+        /*establezco la imagen de fondo para todas las páginas*/
+        background-image: url("../img/fiesta0.jpg");
+        background-size: cover; 
+        /*vh representa un % de la ventana gráfica  */
+        min-height: 100vh;
+    }      
+    
+    .carousel{
+        display: block;
+    }
+
+    .inicioResponsive img{
+        display: none;       
+    }
+
+    .fondoContenedor{
+        width: 100%; 
+        height: 400px;       
+    }
+    
+    .lista{          
+        font-size: 20px;            
+    
+        li{
+            line-height: 3;    
+        }
+    }
+
+    .footer{
+        font-size: 12px;
+
+        img{
+            width: 40px;        
+        }
+    }
+    
+}

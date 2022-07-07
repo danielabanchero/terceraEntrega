@@ -1,0 +1,8 @@
+.card img{
+    width: 18rem;
+    transition: all 1s;
+}
+
+.cardAnimada:hover{
+  transform: translate(10px, 20px);   
+}

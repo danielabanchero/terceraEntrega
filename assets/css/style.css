@@ -1,157 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;   
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.navbar{        
-    flex-grow: 1;
-    /* background-color: rgb(49, 7, 77);    rgb(233, 211, 219)     */
-    /* uso gradiente */
-    /* background: linear-gradient(to right, #480048, #C04848); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+         */
-    background: linear-gradient(to right, #a804a8, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+.navbar {
+  flex-grow: 1;
+  /* background-color: rgb(49, 7, 77);    rgb(233, 211, 219)     */
+  /* uso gradiente */
+  /* background: linear-gradient(to right, #480048, #C04848); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+         */
+  background: linear-gradient(to right, #a804a8, #C04848);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar ul li {
+  padding: 10px;
 }
 
-.nav-link{
-    color: white;
+.nav-link {
+  color: white;
 }
 
- /* Este es para el elemento activo lo puedes omitir si asi deseas
+/* Este es para el elemento activo lo puedes omitir si asi deseas
 .navbar-light .navbar-nav .active>.nav-link  {
     color: red;
 } */
-
-.navbar ul li{
-    padding: 10px;
+main {
+  background-color: rgb(233, 211, 219);
+  color: rgb(57, 8, 104);
 }
 
-main{    
-    background-color: rgb(233, 211, 219);
-    color: rgb(57, 8, 104);
+.footer {
+  background-color: rgb(233, 211, 219);
+  color: rgb(57, 8, 104);
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  width: 30px;
+  padding: 5px;
 }
 
 /*Index*/
-.carousel{
-    display: none;
+.carousel {
+  display: none;
 }
 
-.inicioResponsive{
-    width: 100%;        
+.inicioResponsive {
+  width: 100%;
 }
-
-.inicioResponsive img{
-    height: 13rem;
+.inicioResponsive img {
+  height: 13rem;
 }
 
 /*Productos*/
-
-.card img{
-    width: 18rem;
-    transition: all 1s;
+.card img {
+  width: 18rem;
+  transition: all 1s;
 }
 
-.cardAnimada:hover{
-  transform: translate(10px, 20px);   
+.cardAnimada:hover {
+  transform: translate(10px, 20px);
 }
 
-.btn-primary{
-    background-color: rgba(49, 7, 77, 0.4);
+.btn-primary {
+  background-color: rgba(49, 7, 77, 0.4);
 }
 
 /*Quienes Somos*/
-.fondoContenedor{
-    background-image: url("../img/staff.jpg");
-    background-size: cover;   
-    color: rgb(233, 211, 219);
+.fondoContenedor {
+  background-image: url("../img/staff.jpg");
+  background-size: cover;
+  color: rgb(233, 211, 219);
 }
 
-.transparente{
-    background-color: rgba(49, 7, 77, 0.4);
-    width: 80%;    
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-    padding: 10px;
+.transparente {
+  background-color: rgba(49, 7, 77, 0.4);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 10px;
 }
 
-.lista{  
-    width: 90%;
-    padding: 20px;    
-    font-size: 15px;    
-    font-weight: bold; 
+.lista {
+  width: 90%;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
 }
-
-.lista li{
-    line-height: 2;    
+.lista li {
+  line-height: 2;
 }
-
-/*fin Quienes Somos*/
 
 /*Contacto*/
-.formulario{
+.formulario {
+  width: 100%;
+}
+.formulario input {
+  border-radius: 5px;
+  padding: 5px;
+}
+.formulario textarea {
+  border-radius: 5px;
+  padding: 5px;
+  width: 350px;
+  height: 100px;
+}
+
+/*@media*/
+@media (min-width: 768px) {
+  .main {
+    /*establezco la imagen de fondo para todas las páginas*/
+    background-image: url("../img/fiesta0.jpg");
+    background-size: cover;
+    /*vh representa un % de la ventana gráfica  */
+    min-height: 100vh;
+  }
+
+  .carousel {
+    display: block;
+  }
+
+  .inicioResponsive img {
+    display: none;
+  }
+
+  .fondoContenedor {
     width: 100%;
-}
+    height: 400px;
+  }
 
-.formulario input{
-    border-radius: 5px;
-    padding: 5px;
-}
+  .lista {
+    font-size: 20px;
+  }
+  .lista li {
+    line-height: 3;
+  }
 
-.formulario textarea{
-    border-radius: 5px;
-    padding: 5px;
-    width:350px;
-    height:100px;
-}
-
-/* fin Contacto*/
-
-.footer{
-    background-color: rgb(233, 211, 219);
-    color: rgb(57, 8, 104);
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.footer img{
-    width: 30px;
-    padding: 5px;
-}
-
-@media(min-width: 768px){
-    .main{
-        /*establezco la imagen de fondo para todas las páginas*/
-        background-image: url("../img/fiesta0.jpg");
-        background-size: cover;   
-    }      
-    
-    .carousel{
-        display: block;
-    }
-
-    .inicioResponsive{
-        visibility: collapse;
-        height: 0px;
-        
-    }
-
-    .fondoContenedor{
-        width: 100%; 
-        height: 400px;       
-    }
-    
-    .footer{
-        font-size: 12px;
-    }
-
-    .footer img{
-        width: 40px;        
-    }
-}
-
-/**/
-
+  .footer {
+    font-size: 12px;
+  }
+  .footer img {
+    width: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
