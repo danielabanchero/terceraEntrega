@@ -2,24 +2,26 @@
 .fondoContenedor{
     background-image: url("../img/staff.jpg");
     background-size: cover;   
-    color: $colorPrimario;
+    color: map-get($font, color);
 }
 
 .transparente{
-    background-color: $colorTerciario;
-    width: 80%;    
+    background-color: $colorTerciario;       
     display: flex;
     flex-direction: column;
     margin: 10px 0;
-    padding: 10px;
+    // width: 80%; 
+    // padding: 10px;
+    @include container(80%,10px);
 }
 .lista{  
-    width: 90%;
-    padding: 20px;    
-    font-size: 15px;    
-    font-weight: bold; 
+    // width: 90%;
+    // padding: 20px;    
+    @include container(90%,20px);
+    font-size: map-get($font, size);    
+    font-weight: map-get($font, weight); 
 
     li{
-        line-height: 2;    
+        line-height: map-get($font, height);    
     }
 }

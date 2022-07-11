@@ -6,6 +6,11 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.formato, .formulario textarea, .formulario input {
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .navbar {
   flex-grow: 1;
   /* background-color: rgb(49, 7, 77);    rgb(233, 211, 219)     */
@@ -79,10 +84,10 @@ main {
 
 .transparente {
   background-color: rgba(49, 7, 77, 0.4);
-  width: 80%;
   display: flex;
   flex-direction: column;
   margin: 10px 0;
+  width: 80%;
   padding: 10px;
 }
 
@@ -100,13 +105,7 @@ main {
 .formulario {
   width: 100%;
 }
-.formulario input {
-  border-radius: 5px;
-  padding: 5px;
-}
 .formulario textarea {
-  border-radius: 5px;
-  padding: 5px;
   width: 350px;
   height: 100px;
 }

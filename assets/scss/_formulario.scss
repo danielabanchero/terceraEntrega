@@ -3,13 +3,12 @@
     width: 100%;
 
     input{
-        border-radius: 5px;
-        padding: 5px;
+        @extend .formato;
+        
     }
 
     textarea{
-        border-radius: 5px;
-        padding: 5px;
+        @extend .formato;
         width:350px;
         height:100px;
     }
