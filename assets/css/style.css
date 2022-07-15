@@ -1,9 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .formato, .formulario textarea, .formulario input {
@@ -16,11 +16,11 @@
   /* background-color: rgb(49, 7, 77);    rgb(233, 211, 219)     */
   /* uso gradiente */
   /* background: linear-gradient(to right, #480048, #C04848); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+         */
-  background: linear-gradient(to right, #a804a8, #C04848);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #f8dcc9, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbar ul li {
   padding: 10px;
+  font-size: 20px;
 }
 
 .nav-link {
@@ -32,13 +32,17 @@
     color: red;
 } */
 main {
-  background-color: rgb(233, 211, 219);
-  color: rgb(57, 8, 104);
+  background-color: rgb(247, 207, 199);
+  color: rgb(52, 31, 71);
+}
+
+.texto {
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer {
-  background-color: rgb(233, 211, 219);
-  color: rgb(57, 8, 104);
+  background-color: rgb(73, 72, 72);
+  color: white;
   font-size: 10px;
   display: flex;
   justify-content: center;
@@ -65,25 +69,27 @@ main {
 .card img {
   width: 18rem;
   transition: all 1s;
+  border-radius: 10px;
 }
 
 .cardAnimada:hover {
   transform: translate(10px, 20px);
 }
 
-.btn-primary {
-  background-color: rgba(49, 7, 77, 0.4);
+.btn {
+  background-color: rgba(243, 201, 167, 0.4);
+  border-color: rgb(52, 31, 71);
 }
 
 /*Quienes Somos*/
 .fondoContenedor {
   background-image: url("../img/staff.jpg");
   background-size: cover;
-  color: rgb(233, 211, 219);
+  color: rgb(52, 31, 71);
 }
 
 .transparente {
-  background-color: rgba(49, 7, 77, 0.4);
+  background-color: rgba(243, 201, 167, 0.4);
   display: flex;
   flex-direction: column;
   margin: 10px 0;
@@ -114,32 +120,25 @@ main {
 @media (min-width: 768px) {
   .main {
     /*establezco la imagen de fondo para todas las páginas*/
-    background-image: url("../img/fiesta0.jpg");
-    background-size: cover;
     /*vh representa un % de la ventana gráfica  */
     min-height: 100vh;
   }
-
   .carousel {
     display: block;
   }
-
   .inicioResponsive img {
     display: none;
   }
-
   .fondoContenedor {
     width: 100%;
     height: 400px;
   }
-
   .lista {
     font-size: 20px;
   }
   .lista li {
     line-height: 3;
   }
-
   .footer {
     font-size: 12px;
   }

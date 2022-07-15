@@ -9,14 +9,10 @@
     background-color: $colorTerciario;       
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
-    // width: 80%; 
-    // padding: 10px;
+    margin: 10px 0;    
     @include container(80%,10px);
 }
-.lista{  
-    // width: 90%;
-    // padding: 20px;    
+.lista{      
     @include container(90%,20px);
     font-size: map-get($font, size);    
     font-weight: map-get($font, weight); 

@@ -1,4 +1,8 @@
 main{    
     background-color: $colorPrimario;
-    color: $colorSecundario;
+    color: map-get($font, color);
+}
+
+.texto{
+    font-family: 'Montserrat', sans-serif;
 }
